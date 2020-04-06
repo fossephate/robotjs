@@ -258,7 +258,6 @@ void toggleUnicode(UniChar ch, const bool down)
 
 void unicodeTap(const unsigned value)
 {
-	#if defined(IS_MACOSX)
 	#if defined(USE_X11)
 		char ch = (char)value;
 
