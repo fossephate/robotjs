@@ -343,7 +343,8 @@ void scrollMouse(int x, int y)
 	// Flip x to match other platforms.
 	mouseScrollInputs[1].mi.mouseData = -x;
 
-	SendInput(2, mouseScrollInputs, sizeof(INPUT));
+	// SendInput(2, mouseScrollInputs, sizeof(INPUT));
+	SendInput(2, mouseScrollInputs, sizeof(mouseScrollInputs));
 #endif
 }
 

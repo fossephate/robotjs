@@ -13,10 +13,11 @@
 	#include "xdisplay.h"
 #endif
 
+// https://github.com/Kyusung4698/robotjs/commit/731f70686c863de51649521ea207bb60aa7511a3
 /* Convenience wrappers around ugly APIs. */
 #if defined(IS_WINDOWS)
 	#define WIN32_KEY_EVENT_WAIT(key, flags) \
-		(win32KeyEvent(key, flags), Sleep(DEADBEEF_RANDRANGE(63, 125)))
+		(win32KeyEvent(key, flags))
 #elif defined(USE_X11)
 	#define X_KEY_EVENT(display, key, is_press) \
 		(XTestFakeKeyEvent(display, \
