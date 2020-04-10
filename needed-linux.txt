@@ -1,0 +1,1 @@
+sudo apt install libxtst-dev libx11-dev libpng++-dev
